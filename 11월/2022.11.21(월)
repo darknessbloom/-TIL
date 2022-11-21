@@ -1,0 +1,415 @@
+Today I done
+
+- 자바 비트코딩 step4,5,6
+- 네이버 부스트코스 퀴즈 제출, 1-4까지 과제 제출
+- 코세라 모두를 위한 머신러닝 1주차 1-1까지
+- 꼬리에 꼬리를 무는 암살의 역사 약 5-7페이지 독서
+- 영어 화상회화 수업
+
+Today I learn
+- 자바 비트코딩 문제풀이
+## step4 문자열 char
+37
+
+```java
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//ex1-143이면 이 범위 안에서의 소수 검색해서 집어 넣기
+		//System.out.print("enter the number");
+		char x='k';
+		char y='g';
+		System.out.printf("%d %d",(int)x,(int)y);
+			
+	}
+```
+
+38
+
+```java
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//ex1-143이면 이 범위 안에서의 소수 검색해서 집어 넣기
+		//System.out.print("enter the number");
+		char x='a',y='b',z='c';
+		char w=(char)((int)x+(int)y+(int)z);
+		System.out.printf("%s %d",w,(int)w );
+		
+		
+	
+		
+	}
+```
+
+39
+
+```java
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//ex1-143이면 이 범위 안에서의 소수 검색해서 집어 넣기
+		//System.out.print("enter the number");
+		char x='a';
+		System.out.println((int)x);
+		System.out.println(x++);
+		System.out.println(++x);	
+	}
+```
+
+출력결과
+
+```java
+97
+a
+c
+```
+
+## step 5 문자열 String
+11/21
+
+44
+
+```java
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//ex1-143이면 이 범위 안에서의 소수 검색해서 집어 넣기
+		//System.out.print("enter the number");
+		String nation="korea";
+		System.out.println(nation);
+	
+	}
+```
+
+45
+
+```java
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//ex1-143이면 이 범위 안에서의 소수 검색해서 집어 넣기
+		//System.out.print("enter the number");
+		String A="NOVEMBER";
+		String B="MAY";
+		System.out.println(A.indexOf("M"));
+		System.out.println(A.indexOf("E"));
+		System.out.println(A.substring(2,5));
+		System.out.println(A.charAt(1));
+		System.out.println(B.endsWith("y"));
+		System.out.println(B.toLowerCase());
+		System.out.println(A+B);
+	
+	}
+```
+
+출력결괴
+
+```java
+4
+3
+VEM
+O
+false
+may
+NOVEMBERMAY
+```
+
+46
+
+```java
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//ex1-143이면 이 범위 안에서의 소수 검색해서 집어 넣기
+		//System.out.print("enter the number");
+		String str1="JULIO";
+		String str2="ABRAM";
+		String str3="DODO";
+		// 왜 이건 안되지..?System.out.println((str1.charAt(0))+(str2.charAt(0))+(str3.charAt(0)));
+		System.out.printf("%c%c%c",str1.charAt(0),str2.charAt(0),str3.charAt(0));
+		
+	}
+```
+
+49
+
+```java
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//ex1-143이면 이 범위 안에서의 소수 검색해서 집어 넣기
+		//System.out.print("enter the number");
+		System.out.println("지나간것은");
+		System.out.println("지나간대로");
+		System.out.println("그런 의미가 있죠");
+		
+	}
+```
+
+50
+
+```java
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//ex1-143이면 이 범위 안에서의 소수 검색해서 집어 넣기
+		//System.out.print("enter the number");
+		String str1="A\nB\tC\tD\n\n";
+		String str2="EFG\n\"H\"";
+		System.out.print(str1);
+		System.out.print(str2);
+		
+	}
+```
+
+출력결과
+
+```java
+A
+B	C	D
+
+EFG
+"H"
+```
+
+51
+
+```java
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		String name="Ronaldo";
+		String nation="portugal";
+		int age=23;
+		int height=185;
+		System.out.printf("my name is %s ,and i'm from %s\n",name,nation);
+		System.out.printf("i'm %d years old and %d cm tall",age,height);
+		
+		
+	}
+```
+
+56
+
+```java
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String mystr="SOLUTION";
+		System.out.println(mystr.substring(1,4));
+		System.out.println(mystr.substring(0,5));
+		
+	}
+```
+
+57
+
+```java
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		System.out.println("c:\\\'aa\\\"abc.txt");
+
+		
+	}
+```
+
+출력결과
+
+```java
+c:\'aa\"abc.txt
+```
+
+59
+
+띄어스기 있는 문자열을 글자수만 출력하는 법(띄어쓰기 미포함)
+
+```java
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		String s="동해물과 백두산이 마르고 닳도록";
+		System.out.println(s.replace(" ", "").length()); //공백을 공백을 없애도록 replace를 이용후 길이재기
+
+		
+	}
+```
+
+60
+
+```java
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		String s="I'm from Korea,buy I don't like Kimchi";
+		System.out.println(s.toUpperCase());
+		System.out.println(s.toLowerCase());
+		System.out.println(s.replace(" ", ""));
+		
+	}
+```
+
+출력결과
+
+```java
+I'M FROM KOREA,BUY I DON'T LIKE KIMCHI
+i'm from korea,buy i don't like kimchi
+I'mfromKorea,buyIdon'tlikeKimchi
+```
+
+## step 6 비트연산자
+
+66
+
+```java
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		int a=11,b=22,c=33;
+		System.out.println(Integer.toBinaryString(a));
+		System.out.println(Integer.toHexString(b));
+		System.out.println(Integer.toOctalString(c));
+		
+		System.out.println(Integer.toBinaryString(c<<1));
+		//System.out.print(Integer.to);
+		
+		
+	}
+```
+
+출력결과
+
+```java
+1011
+16
+41
+1000010
+```
+
+68
+
+```java
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		
+		int a=82,b=98;
+		System.out.printf("%s %d\n",Integer.toBinaryString(a&b),a&b);
+		System.out.printf("%s %d\n",Integer.toBinaryString(a^b),a^b);
+		System.out.printf("%s %d\n",Integer.toBinaryString(a|b),a|b);
+		System.out.printf("%s %d\n",Integer.toBinaryString(a+b>>2),a+b>>2);
+		
+		
+	}
+```
+
+출력결과
+
+```java
+1000010 66
+110000 48
+1110010 114
+101101 45
+```
+
+69
+
+```java
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//ex1-143이면 이 범위 안에서의 소수 검색해서 집어 넣기
+		//System.out.print("enter the number");
+		
+		int a=5,b=8,c=2;
+		int n1=a&b;
+		int n2=a|b;
+		int n3=a^c;
+		int n4=a&b^c;
+		System.out.printf("%d %d %d %d\n",n1,n2,n3,n4);
+		//0101
+		//1000
+		//0010
+		
+		
+	}
+```
+
+출력결과
+
+```java
+0 13 7 2
+```
+
+70
+
+```java
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//ex1-143이면 이 범위 안에서의 소수 검색해서 집어 넣기
+		//System.out.print("enter the number");
+		
+		int a=-3;
+		System.out.printf("%d ",(~a)+1);
+		//0101
+		//1000
+		//0010
+		
+		
+	}
+```
+
+출력결과
+
+```java
+3
+```
+
+71
+
+```java
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//ex1-143이면 이 범위 안에서의 소수 검색해서 집어 넣기
+		//System.out.print("enter the number");
+		
+		int a=8;
+		System.out.printf("%d ",a<<1);
+		//0101
+		//1000
+		//0010
+		
+		
+	}
+```
+
+출력결과
+
+```java
+16
+```
+
+72
+
+```java
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//ex1-143이면 이 범위 안에서의 소수 검색해서 집어 넣기
+		//System.out.print("enter the number");
+		
+		int a=1;
+		System.out.printf("%d ",a<<1);
+		System.out.printf("%d ",a<<2);
+		System.out.printf("%d ",a<<3);
+		System.out.printf("%d ",a<<4);
+		System.out.printf("%d ",a<<5);
+		System.out.printf("%d ",a<<6);
+		System.out.printf("%d ",a<<7);
+		//0101
+		//1000
+		//0010
+		
+		
+	}
+```
+
+출력결과
+
+```java
+2 4 8 16 32 64 128
+```
